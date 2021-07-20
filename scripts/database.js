@@ -101,10 +101,10 @@ const database = {
 }
 
 export const getWalkers = () => {
-    return [...database.walkers]
+    return database.walkers.map(walker => ({...walker}))
 }
 
 export const getPets = () => {
-    return [...database.pets]
+    return database.pets.map(pet => ({...pet}))
 }
 
