@@ -97,14 +97,48 @@ const database = {
         id: 10,
         name: "Panda",
         walkerId: 7
+    }],
+    cities: [{
+        id: 1,
+        name: "Chicago"
+    }, {
+        id: 2,
+        name: "White Plains"
+    }, {
+        id: 3,
+        name: "Sarasota"
+    }, {
+        id: 4,
+        name: "San Diego"
+    }, {
+        id: 5,
+        name: "Boise"
+    }, {
+        id: 6,
+        name: "Denver"
+    }, {
+        id: 7,
+        name: "Tucson"
+    }, {
+        id: 8,
+        name: "Phoenix"
+    }, {
+        id: 9,
+        name: "Minneapolis"
+    }, {
+        id: 10,
+        name: "Pittsburgh"
     }]
 }
 
 export const getWalkers = () => {
-    return database.walkers.map(walker => ({...walker}))
+    return database.walkers.map(walker => ({ ...walker }))
 }
 
 export const getPets = () => {
-    return database.pets.map(pet => ({...pet}))
+    return database.pets.map(pet => ({ ...pet }))
 }
 
+export const getCities = () => {
+    return database.cities.map(city => ({ ...city }))
+}
